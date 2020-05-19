@@ -1,8 +1,35 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
+<head>
+<style>
+nav#nav1{ margin-top: 24px; }
+nav#nav1 > a{ background:#B9E1FF; color:#000; padding:10px; text-decoration:none; border-radius:5px; font-family:"Arial Black", Gadget, sans-serif; }
+nav#nav1 > a:hover{ background: #BBEA00; }
+nav#nav1 > a:active{ background: #EEFFA8; }
+</style>
+<script>
+var daft = new Audio();
+daft.src = 'daft.mp3';
+var patience = new Audio();
+patience.src = 'patience.mp3';
+var talk = new Audio();
+talk.src = 'talk in ragged flagon.mp3';
+var walls = new Audio();
+walls.src = 'walls have ears.mp3';
+var errand = new Audio();
+errand.src = 'errand.mp3';
+var vault = new Audio();
+vault.src = 'vault.mp3';
+</script>
+</head>
 <body>
-   <audio controls>
-     
-   </audio>
+  <nav id="nav1">
+    <a href="#" onmousedown="daft.play()">Daft</a>
+    <a href="#" onmousedown="patience.play()">Patience</a>
+    <a href="#" onmousedown="walls.play()">Walls</a>
+    <a href="#" onmousedown="talk.play()">Talk Flagon</a>
+    <a href="#" onmousedown="errand.play()">Errand</a>
+    <a href="#" onmousedown="vault.play()">Vault</a>
+  </nav>
 </body>
 </html>
